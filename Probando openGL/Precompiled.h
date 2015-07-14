@@ -11,6 +11,21 @@
 
 #ifdef WIN32
 #include <Windows.h>
+#endif
+
+#undef min
+#undef max
+
+//incluir clases
+
+
+//incluir librerias
+#include <string>
+#include <cstring> // strlen, memcpy, etc.
+#include <cstdlib> // exit
+#include <cfloat>  // FLT_MAX
+#include <vector>
+#include <math.h>
 #include <gl\GL.h>
 #include <gl\GLU.h>
 #include <gl\glfw3.h>
@@ -19,21 +34,6 @@
 #pragma comment(lib,"glfw3.lib")
 #pragma comment(lib,"opengl32.lib")
 #pragma comment(lib,"glu32.lib")
-
-#endif
-
-#undef min
-#undef max
-
-#include <string>
-#include <cstring> // strlen, memcpy, etc.
-#include <cstdlib> // exit
-#include <cfloat>  // FLT_MAX
-#include <vector>
-#include <math.h>
-#include <gl\GLU.h>
-#include <gl\GL.h>
-#include <gl\glut.h>
 
 
 #endif // PRECOMPILED_H
